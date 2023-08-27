@@ -1,0 +1,27 @@
+package test;
+
+public class Chick {
+
+	private String name = "narendra";
+	
+	{
+		System.out.println("instance initializer, name is:" + name);
+		//System.out.println(name2);
+		name2 = "maha";
+		//name = name + " " + name2; illeagal forward reference
+	}
+	
+	private String name2;
+	
+	public Chick() {
+		//name = "korrapati";
+		System.out.println("Constructor completed");
+	}
+	
+	public static void main(String... args) {
+		
+		Chick chick = new Chick();
+		System.out.println("name:"+ chick.name);		
+	}
+	
+}
