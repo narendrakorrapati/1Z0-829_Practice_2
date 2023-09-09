@@ -1,0 +1,23 @@
+package arrays;
+
+import java.util.Arrays;
+
+public class ArraySearch {
+
+	public static void main(String args[]) {
+		
+		
+		searchSortedArray();
+	}
+	
+	static void searchSortedArray() {
+		
+		int numbers[] = {6, 1, 9};
+		Arrays.sort(numbers);
+		
+		System.out.println(Arrays.binarySearch(numbers, 1));
+		System.out.println(Arrays.binarySearch(numbers, 10));
+		
+	}
+
+}
